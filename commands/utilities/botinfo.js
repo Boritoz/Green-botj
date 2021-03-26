@@ -21,7 +21,7 @@ module.exports = {
 
         .setAuthor(`Statistiques de ${message.client.user.tag}`, message.client.user.displayAvatarURL())
             .setDescription(`
-            **${message.client.user.username}** Vient du bot [\`Green-bot\`](https://github.com/pauldb09/Green-bot/) Un bot open source créer par [\`Pauldb09\`](https://github.com/pauldb09).
+            **${message.client.user.username}** vient de [\`Green-bot\`](https://github.com/pauldb09/Green-bot/) Un bot open source créer par [\`Pauldb09\`](https://github.com/pauldb09).
 
            🆔\`Identifiant\` : **${message.client.user.id}**
            👤\`Compte Crée le :\` : **${moment(message.client.user.createdTimestamp).locale('fr').format('LT ,')} ${moment(message.client.user.createdTimestamp).locale('fr').format('LL, ')} ${moment(message.client.user.createdTimestamp).locale('fr').fromNow()}**
@@ -45,7 +45,7 @@ module.exports = {
             🖥\`Hébergeur\` : **AdkyNet**
             `, true)
             .addField(`📊 __Utilisation__`, `
-            💻\`Personnes différentes ayant fait des commandes\` : **${commands.length}** (**${commandOnSErver.length}** sur ce serveur)
+            💻\`Nombre de personnes ayant exécuté des commandes\` : **${commands.length}** (**${commandOnSErver.length}** sur ce serveur)
             🎁\`Giveaways\` : **${currentGiveaways}**
             🥡\`Sauvegardes crées\` : **${check.length}**
             💡\`Suggestions\` : **${suggs.length}**
